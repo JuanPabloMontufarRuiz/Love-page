@@ -19,7 +19,7 @@ body{
     width: 100%;
     height: 100vh;
     overflow-x: hidden;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.303), rgba(0, 0, 0, 0.577)), url("/assets/Pos.gif");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.303), rgba(0, 0, 0, 0.577)), url("assets/Pos.gif");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
