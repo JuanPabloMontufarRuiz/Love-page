@@ -5,11 +5,97 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css" />
-    <title>Love Page</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="shortcut icon" href="/assets/Hya.png" />
+
+    <title>Love</title>
 </head>
 
 <body>
+
+    <div class="modal" id="modal-letters">
+        <div class="modal-content">
+            <span class="close" data-modal="modal-letters">&times;</span>
+            <h2>Letters</h2>
+            <p>
+                Aquí encontraras las cartas que te he escrito. ¡Y cada cierto tiempo aparecerán nuevas!
+            </p>
+            </p>
+            <div class="letters-gallery">
+                <img src="assets/Cartas/1.jpg" alt="Carta 1" class="letter-img"
+                    onclick="openLetter('assets/letter1.png')">
+                <img src="assets/Cartas/2.jpg" alt="Carta 2" class="letter-img"
+                    onclick="openLetter('assets/letter2.png')">
+                <img src="assets/Cartas/3.jpg" alt="Carta 2" class="letter-img"
+                    onclick="openLetter('assets/letter2.png')">
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-letter-view">
+        <div class="modal-content letter-view-content">
+            <span class="close" data-modal="modal-letter-view">&times;</span>
+            <img id="letter-large-img" src="" alt="Carta ampliada" class="letter-large-img">
+        </div>
+    </div>
+
+    <div class="modal" id="modal-photos">
+        <div class="modal-content">
+            <span class="close" data-modal="modal-photos">&times;</span>
+            <h2>Photos</h2>
+            <p>Próximamente….</p>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-songs">
+        <div class="modal-content">
+            <span class="close" data-modal="modal-songs">&times;</span>
+            <h2>Songs</h2>
+            <p>Nuestras canciones…
+            </p>
+            <div class="songs-gallery">
+                <a href="https://www.youtube.com/watch?v=L19P3uMTE-g&list=RDL19P3uMTE-g&start_radio=1" target="_blank">
+                    <img src="assets/Canciones/1.png" alt="Canción 1" class="song-img">
+                </a>
+                <a href="https://www.youtube.com/watch?v=_RMDjesWtaY&list=RD_RMDjesWtaY&start_radio=1" target="_blank">
+                    <img src="assets/Canciones/2.png" alt="Canción 1" class="song-img">
+                </a>
+                <a href="https://www.youtube.com/watch?v=vnKHgAsOha0&list=RDvnKHgAsOha0&start_radio=1" target="_blank">
+                    <img src="assets/Canciones/3.png" alt="Canción 1" class="song-img">
+                </a>
+                <a href="https://www.youtube.com/watch?v=LH1_6XpslbM&list=RDLH1_6XpslbM&start_radio=1" target="_blank">
+                    <img src="assets/Canciones/4.png" alt="Canción 1" class="song-img">
+                </a>
+                <a href="https://www.youtube.com/watch?v=bo2StBEaVt4&list=RDbo2StBEaVt4&start_radio=1" target="_blank">
+                    <img src="assets/Canciones/5.png" alt="Canción 1" class="song-img">
+                </a>
+                <a href="https://www.youtube.com/watch?v=PK4AgPMUYX4&list=RDPK4AgPMUYX4&start_radio=1" target="_blank">
+                    <img src="assets/Canciones/6.png" alt="Canción 1" class="song-img">
+                </a>
+                <a href="https://www.youtube.com/watch?v=-_UcMoOo_3o&list=RD-_UcMoOo_3o&start_radio=1" target="_blank">
+                    <img src="assets/Canciones/7.png" alt="Canción 1" class="song-img">
+                </a>
+                <a href="https://www.youtube.com/watch?v=bIhoP9UKsuM&list=RDbIhoP9UKsuM&start_radio=1" target="_blank">
+                    <img src="assets/Canciones/8.png" alt="Canción 1" class="song-img">
+                </a>
+                <a href="https://www.youtube.com/watch?v=7aQRtj_QS0U" target="_blank">
+                    <img src="assets/Canciones/9.png" alt="Canción 1" class="song-img">
+                </a>
+                <a href="https://www.youtube.com/watch?v=Vd-Pi446I2E&list=RDVd-Pi446I2E&start_radio=1" target="_blank">
+                    <img src="assets/Canciones/10.png" alt="Canción 1" class="song-img">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-us">
+        <div class="modal-content">
+            <span class="close" data-modal="modal-us">&times;</span>
+            <h2>About Us</h2>
+            <p>Próximamente….</p>
+        </div>
+    </div>
+
     <header>
         <a href="#" class="logo">Love</a>
 
@@ -18,46 +104,193 @@
             <a href="#">Letters</a>
             <a href="#">Photos</a>
             <a href="#">Songs</a>
-            <a href="#">About Us</a>
+            <a href="#">Us</a>
         </nav>
+        <div class="hamburger">
+            <i class="fa fa-bars"></i>
+        </div>
     </header>
     <section class="home">
         <div class="home-img">
-            <img src="assets/March 7.png" alt="">
+            <img src="assets/Robin.png" alt="">
         </div>
         <div class="home-content">
             <h1>Baul of <span>Heartfelt Memories</span></h1>
             <h3 class="typing-text">My Love<span></span></h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias aperiam enim modi illum quaerat
-                doloremque perferendis soluta, tempora consequuntur ratione officia consequatur? Obcaecati autem
-                provident, fugit qui architecto saepe. Aperiam.</p>
+            <p>¡Bienvenida!... ⋆˙⟡
+                <br>────୨ৎ────<br>
+                Este es un espacio que he creado en el cual guardaremos pedacitos de nuestro universo. Lo
+                podrás visitar siempre que lo desees y cada vez que lo veas, recuerdes la hermosa magia que nos
+                compone
+                a ambos. 🫧𓇼𓏲*ੈ✩‧₊˚🎐
+                <br><br>
+                Aquí viven cartas como susurros atrapados en botellas de cristal. Aquí se recitan canciones
+                como melodías que flotan en el aire cuando cae el atardecer. También vivirán nuestras fotos como
+                pequeños atardeceres que nunca se apagan… Y, sobre todo, podrás encontrar mis palabras sobre ti como
+                constelaciones dibujadas en papel.
+                <br><br>
+                ¡Cada cierto tiempo habrá nuestras estrellas cayendo en este baúl de recuerdos, así que mucho ojo!
+                <br>⏔⏔⏔ ꒰ ᧔ෆ᧓ ꒱ ⏔⏔⏔<br>  
+            </p>
             <div class="social-icons">
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fas fa-heart"></i></a>
+                <a href="#"><i class="far fa-heart"></i></a>
+                <a href="#"><i class="far fa-heart"></i></a>
+                <a href="#"><i class="fas fa-heart"></i></a>
             </div>
-            <a href="#" class="btn">Sweet Memories</a>
+            <a href="https://www.youtube.com/watch?v=1WaQimJ3NdQ" class="btn" target="_blank">Haz clic aqui</a>
         </div>
     </section>
 
+    <div>
+        <audio id="bg-music" src="assets/song.mp3" loop autoplay></audio>
+    </div>
+
     <script>
-let lastScroll = 0;
-const header = document.querySelector('header');
+        let lastScroll = 0;
+        const header = document.querySelector('header');
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('nav');
 
-window.addEventListener('scroll', () => {
-  const currentScroll = window.pageYOffset;
-  if (currentScroll > lastScroll) {
-    
-    header.classList.add('hide-header');
-  } else {
-    
-    header.classList.remove('hide-header');
-  }
-  lastScroll = currentScroll;
-});
-</script>
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            if (currentScroll > lastScroll) {
+                header.classList.add('hide-header');
+                nav.classList.remove('active');
+            } else {
+                header.classList.remove('hide-header');
+            }
+            lastScroll = currentScroll;
+        });
 
+        hamburger.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+
+        const modalMap = {
+            'Letters': 'modal-letters',
+            'Photos': 'modal-photos',
+            'Songs': 'modal-songs',
+            'Us': 'modal-us'
+        };
+
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', e => {
+                const text = link.textContent.trim();
+                if (modalMap[text]) {
+                    e.preventDefault();
+                    document.getElementById(modalMap[text]).style.display = 'flex';
+                    nav.classList.remove('active');
+                }
+            });
+        });
+
+        document.querySelectorAll('.close').forEach(btn => {
+            btn.addEventListener('click', e => {
+                const modalId = btn.getAttribute('data-modal');
+                document.getElementById(modalId).style.display = 'none';
+            });
+        });
+
+
+        document.querySelectorAll('.modal').forEach(modal => {
+            modal.addEventListener('click', e => {
+                if (e.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+        });
+    </script>
+
+    <button id="music-btn" title="Mute/Unmute music">
+        <img id="music-icon" src="assets/music-on.png" alt="Music" style="width:32px; height:32px;">
+    </button>
+    <div id="yt-player" style="display:none;"></div>
+
+    <script>
+
+        const bgMusic = document.getElementById('bg-music');
+        bgMusic.volume = 0.2;
+        const musicBtn = document.getElementById('music-btn');
+        const musicIcon = document.getElementById('music-icon');
+        let isMuted = false;
+
+        function resumeMusicOnUserInteraction() {
+            bgMusic.play().catch(() => { });
+            window.removeEventListener('click', resumeMusicOnUserInteraction);
+            window.removeEventListener('keydown', resumeMusicOnUserInteraction);
+        }
+        window.addEventListener('click', resumeMusicOnUserInteraction);
+        window.addEventListener('keydown', resumeMusicOnUserInteraction);
+
+        musicBtn.addEventListener('click', () => {
+            isMuted = !isMuted;
+            bgMusic.muted = isMuted;
+            musicIcon.src = isMuted ? "assets/music-off.png" : "assets/music-on.png";
+        });
+
+        musicBtn.addEventListener('wheel', (e) => {
+            e.preventDefault();
+            let vol = bgMusic.volume;
+            vol += e.deltaY < 0 ? 0.05 : -0.05;
+            vol = Math.max(0, Math.min(1, vol));
+            bgMusic.volume = vol;
+        });
+
+        const cuteSound = new Audio('assets/sound.mp3');
+        cuteSound.volume = 0.2;
+
+        function playCuteSound() {
+            cuteSound.currentTime = 0;
+            cuteSound.play();
+        }
+
+        const cuteSound2 = new Audio('assets/sound2.mp3');
+        cuteSound2.volume = 0.2;
+
+        function playCuteSound2() {
+            cuteSound2.currentTime = 0;
+            cuteSound2.play();
+        }
+
+        document.querySelectorAll('.close').forEach(btn => {
+            btn.addEventListener('mouseenter', playCuteSound);
+            btn.addEventListener('click', playCuteSound2);
+        });
+
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('mouseenter', playCuteSound);
+            link.addEventListener('click', playCuteSound2);
+        });
+
+        musicBtn.addEventListener('mouseenter', playCuteSound);
+        musicBtn.addEventListener('click', playCuteSound2);
+    </script>
+
+    <script>
+        document.querySelectorAll('.letter-img').forEach(img => {
+            img.addEventListener('click', function () {
+                const modal = document.getElementById('modal-letter-view');
+                const largeImg = document.getElementById('letter-large-img');
+                largeImg.src = this.src;
+                largeImg.alt = this.alt;
+                modal.style.display = 'flex';
+            });
+        });
+
+        // Cerrar modal de carta ampliada
+        document.querySelector('#modal-letter-view .close').addEventListener('click', function () {
+            document.getElementById('modal-letter-view').style.display = 'none';
+        });
+
+        // Cerrar modal si se hace click fuera de la imagen
+        document.getElementById('modal-letter-view').addEventListener('click', function (e) {
+            if (e.target === this) {
+                this.style.display = 'none';
+            }
+        });
+
+    </script>
 </body>
 
 </html>
